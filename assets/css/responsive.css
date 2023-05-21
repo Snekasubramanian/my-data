@@ -1,0 +1,24 @@
+@media (max-width:567px) {}
+
+@media (max-width:767px) {
+    .nav-link::before {
+        display: none;
+    }
+    .nav-menu .min-nav {
+        background: #dadada;
+        padding: 10px 20px;
+        position: absolute;
+        right: -150px;
+        top: 80px;
+        transition: all .2s;
+        width: 190px;
+        z-index: 11;
+    }
+
+    .nav-menu .min-nav.show {
+        right: 0;
+        transition: all .2s;
+    }
+}
+
+@media (max-width:991px) {}

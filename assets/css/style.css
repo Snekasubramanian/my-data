@@ -1,0 +1,506 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "f1" !important;
+    overflow-x: hidden;
+}
+
+body {
+
+    cursor: url(https://i.ibb.co/mX2LrWv/circle.png) 5 5, auto;
+}
+
+:root {
+    --primary: #00a5e3;
+    --background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    --box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+.owl-item {
+    margin-bottom: 30px;
+}
+
+/* font */
+@font-face {
+    font-family: "f1";
+    src: url("../fonts/outfit/Outfit-Regular.ttf ");
+}
+
+@font-face {
+    font-family: "f2";
+    src: url("../fonts/outfit/Outfit-Medium.ttf ");
+}
+
+@font-face {
+    font-family: "f3";
+    src: url("../fonts/outfit/Outfit-Bold.ttf ");
+}
+
+@font-face {
+    font-family: "f4";
+    src: url("../fonts/outfit/PlayfairDisplay-ExtraBold.ttf ");
+}
+
+/* font end */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "f4";
+}
+
+p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.w-90 {
+    width: 90%;
+    margin: auto;
+}
+
+.w-50 {
+    width: 50% !important;
+    margin: auto;
+}
+
+.w-95 {
+    width: 95% !important;
+    margin: auto;
+}
+
+.w-80 {
+    width: 80%;
+    margin: auto;
+}
+
+.w-70 {
+    width: 70%;
+    margin: auto;
+}
+
+/* // common design // */
+.d-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex-al {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.d-flex-as {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.d-flex-ae {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.d-flex-jc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.d-flex-jb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.d-flex-je {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.d-flex-al-jc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-al-jb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* // common design end // */
+/* // button design star // */
+.btn-des {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    color: var(--primary) !important;
+    border-radius: 7px;
+    padding: 8px 18px;
+    transition: .3s all;
+    border: 0;
+    font-size: 16px;
+    font-family: "f2";
+
+}
+
+.clse_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: var(--primary);
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    color: #fff;
+}
+
+/* // button design end // */
+/* form design */
+.form-control,
+.form-select {
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #008dd129;
+    box-shadow: 0 7px 20px #008dd11a;
+}
+
+
+
+.form-control:focus,
+.form-select:focus {
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #008dd129 !important;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%) !important;
+}
+
+/* form design end */
+/* navbar design */
+.nav-menu {
+    background: #fff;
+    color: #000;
+}
+
+.nav-menu img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-menu .nav-link {
+
+    font-size: 15px;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    bottom: 0;
+    left: 23%;
+    width: 0%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.nav-menu .navbar-nav .nav-link:hover::before,
+.nav-menu .navbar-nav .nav-link.active::before {
+    width: 50%;
+    transition: 0.4s;
+    background: var(--primary);
+
+}
+
+.nav-menu .navbar-toggler {
+    background: var(--primary);
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.nav-menu .navbar-toggler:focus {
+    box-shadow: 0 0 0 !important;
+}
+
+.sticky {
+    top: 0;
+    position: fixed !important;
+    width: 100%;
+    left: 0;
+    transition: all 0.4s linear;
+    z-index: 111;
+    background: white;
+    box-shadow: 0 0 5px #888;
+
+}
+
+/* humbar menu */
+.menu-btn {
+    height: 32px;
+    width: 40px;
+    border: 0 !important;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    margin-top: 9px;
+    transform: rotate(180deg);
+    transition: .5s ease-in-out;
+    /* animation: width_anim 0.5s infinite ease-in-out forwards alternate-reverse; */
+    width: 20px;
+    height: 2px;
+    border-radius: 5rem;
+}
+
+.menu-btn span::before {
+    animation-delay: 0.1s;
+}
+
+.menu-btn span::after {
+    animation-delay: 0.2s;
+}
+
+.menu-btn span::before {
+    margin-top: -7px;
+}
+
+.menu-btn span::after {
+    margin-top: 8px;
+}
+
+.menu-btn.active span {
+    background: transparent;
+}
+
+.menu-btn.active span,
+.menu-btn.active span::before,
+.menu-btn.active span::after {
+    animation: none;
+}
+
+.menu-btn.active span::before {
+    margin-top: 0;
+    transform: rotate(45deg);
+}
+
+.menu-btn.active span::after {
+    transform: rotate(-45deg);
+    margin-top: 0;
+}
+
+/* humbar menu */
+/* nav bar */
+/* banner design */
+.banner-design {
+    background: #ECF0F3;
+    padding: 30px 20px;
+}
+
+.banner-design .bio-data h1 {
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.banner-design .color-text {
+    color: var(--primary);
+}
+
+.banner-design .ityped-cursor {
+    color: var(--primary);
+}
+
+.banner-design h6 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.ban-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* banner design end */
+/* abouit us */
+.about-us .about-img {
+    position: relative;
+    text-align: center;
+}
+
+.about-us .about-img img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.about-us .about-img::before {
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: calc(100% - 130px);
+    content: "";
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+}
+
+.about-me h6 {
+    background: #00a5e324;
+    margin: 0;
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    font-family: "f2";
+}
+
+.about-me h2 {
+    margin: 15px 0;
+}
+
+/* abouit us end */
+/* project design */
+.title-design {
+    text-align: center;
+}
+
+.title-design h6 {
+    color: var(--primary);
+    font-family: "f2";
+    letter-spacing: 3px;
+}
+
+.proje-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.proje-box .proj-img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.proje-box .proj-img img {
+    transition: all 0.6s ease-in-out 0s;
+
+    width: 100%;
+    height: auto;
+}
+
+.proje-box:hover .proj-img img {
+    transform: scale(1.07);
+}
+
+.proje-box .prj-com h6 {
+    color: var(--primary);
+}
+
+.proje-box .prj-com h3 {
+    text-align: center;
+}
+
+/* project design end */
+/* tool design */
+.skills-design {
+    background: #212529;
+    padding: 10px;
+}
+
+.tool-des img {
+    background: #383e45;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 95px;
+    margin: auto;
+}
+
+.tool-des {
+    text-align: center;
+}
+
+.tool-des h6 {
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.skills-design .title-design h2 {
+    color: #fff;
+
+}
+
+/* skill */
+/* contact */
+.con-img img {
+    width: 50%;
+    height: auto;
+}
+
+.con-img p {
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* contact */
+/* footer */
+.footer-design {
+    background: #F5F5F5;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.so_c i {
+    background: var(--primary);
+    color: #fff !important;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px 10px 0px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer design end */

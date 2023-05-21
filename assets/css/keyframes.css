@@ -1,0 +1,9 @@
+@keyframes width_anim {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 28px;
+    }
+}
