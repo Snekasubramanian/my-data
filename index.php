@@ -1,7 +1,7 @@
 <?php $file_name = "home";
 include('templates/header.php'); ?>
 <?php include('templates/navbar.php'); ?>
-<!-- banner design -->
+<!-- banner design dd-->
 <div class="banner-design" id="home">
     <div class="d-flex-al w-95 ">
         <div class="col-md-7 col-12 my-2">
